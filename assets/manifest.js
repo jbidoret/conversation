@@ -24,7 +24,8 @@ module.exports.pluginStyles = [
  * their order of concatenation.
  */
 module.exports.userScripts = [
-  'assets/js/main.js'
+  'assets/js/plyr.min.js',
+  'assets/js/main.js',
 ];
 
 /* Name your LESS config file to load.
@@ -38,4 +39,4 @@ module.exports.userStyles = [
  * as well as other niceties from [browser sync](https://www.browsersync.io/)
  * write your local dev url in the localDevUrl variable.
  */
-module.exports.localDevUrl = 'http://localhost/savoirplusrisquermoins/';
+module.exports.localDevUrl = 'http://localhost/conversation/';

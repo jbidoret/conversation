@@ -1,3 +1,9 @@
-title: Site
-preset: pages
-unlisted: true
+title: Conversation
+
+sections:
+  conversation:
+    flip: true
+    type: pages
+    status: all
+    template: default
+

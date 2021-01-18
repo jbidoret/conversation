@@ -4,7 +4,59 @@
 //   "footer"
 //   "sidebar"
 //   etc.
-
+:root {
+  --b: #333;
+}
 body {
   margin: 0;
+  font-size: 2em;
+  background: var(--b);
+  color:whitesmoke;
+  font-family: 'Trispace', sans-serif;
+  font-weight: 200;
+  font-variation-settings: 'wdth' 85, 'wght' 200;
+}
+ol {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+li::before {
+  counter-increment: list -1; 
+  content: counter(list) " : "; /* On affiche le compteur */
+  color: currentColor;
+}
+h1 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: 1em;
+}
+.playing { 
+  font-variation-settings: 'wdth' 125, 'wght' 800;
+  color: tomato;
+}
+a:hover {
+  color: tomato;
+}
+
+#shuffle {
+  position: absolute;
+  right: 1.5rem;
+  top:1.5rem;
+  border-radius: 1em;
+  background: var(--b);
+  border: 1px solid;
+  color: inherit;
+  padding: .15em .5em;
+  font-size: .5em;
+  z-index: 100;
+}
+
+@media(max-width:600px){
+  body{
+    font-size: 1.25em;
+  }
 }

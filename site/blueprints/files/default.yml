@@ -1,0 +1,13 @@
+title: Default File
+columns:
+  - width: 1/2
+    fields:
+      caption:
+        label: Légende
+        type: markdown
+  - width: 1/2
+    fields:
+      alt:
+        label: Alt
+        type: text
+        width: 1/2

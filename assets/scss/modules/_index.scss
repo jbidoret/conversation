@@ -3,3 +3,28 @@
 //   "navbar"
 //   "carousel"
 //   etc.
+@import 'plyr.scss';
+
+.plyr__video-wrapper {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+:root{
+  --plyr-video-controls-background:#000;
+  --plyr-color-main:tomato;
+}
+#player {
+  position: absolute;
+  overflow: visible;
+  bottom:0;
+  width: 100%;
+}
+.plyr--video .plyr__controls {
+  padding-top: var(--plyr-control-spacing, 10px);
+  font-variation-settings: 'wdth' 85, 'wght' 400;
+}
