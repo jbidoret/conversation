@@ -13,15 +13,17 @@ player.on('ended', event => {
 });
 
 function playNext(){
-  var li = current.closest("li").nextSibling;
-  if(li)
-  playThis(li.querySelector('a'));
+  var li = current.closest("li").nextElementSibling;
+  console.log(li);
+  if(li){
+    playThis(li.querySelector('a'));
+  }
 }
 
 function playThis(trgt){
-  current.classList.remove('playing');
+  current.closest("li").classList.remove('playing');
   current = trgt;
-  current.classList.add('playing');
+  current.closest("li").classList.add('playing');
 
   // mp3
   var mp3 = trgt.dataset.audio;
@@ -60,8 +62,9 @@ function playThis(trgt){
 
 
 conversation.addEventListener('click', function(e){
-  e.preventDefault();
-  if(e.target.matches('a')){
+  
+  if(e.target.matches('.audiolink')){
+    e.preventDefault();
     playThis(e.target)
   }
 })

@@ -19,8 +19,9 @@
   --plyr-color-main:tomato;
 }
 #player {
-  position: absolute;
+  position: fixed;
   overflow: visible;
+  z-index: 100;
   bottom:0;
   width: 100%;
 }
