@@ -372,13 +372,13 @@ li {
   line-height: 1;
   pointer-events: none;
   position: relative;
-  padding-left: 1em; }
+  padding-left: 1.25em; }
   li nav {
     pointer-events: all;
     display: inline; }
   li::before {
     font-size: 1em;
-    margin-left: -1em;
+    margin-left: -1.25em;
     position: absolute;
     top: -.15em; }
 
@@ -494,7 +494,8 @@ li.open nav {
   white-space: normal;
   height: auto;
   line-height: 1.2;
-  margin-top: -.2rem; }
+  margin-top: -.2rem;
+  font-variation-settings: 'wdth' 85, 'wght' 200; }
   .open .text:hover {
     color: whitesmoke; }
   .open .text p:first-child {

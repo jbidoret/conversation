@@ -28,7 +28,7 @@
 
   <?php if($i->text()->isNotEmpty()) : ?>
   <div class="text <?php e(!$i->hasSound(), 'textlink') ?>">
-    <?= $i->text()->kt() ?>  
+    <?= $i->text()->kt()->widont() ?>  
   </div>
   <?php endif ?>  
 
