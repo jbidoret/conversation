@@ -1,31 +1,37 @@
-title: Morceau
+title: Entrée
 
 columns:
-  - width: 2/3      
-    fields:
-      artist:
-        type: text
-        label: Artiste/groupe
-        width: 3/4
-      publisher:
-        type: select
-        width: 1/4
-        options:
-          - v
-          - jm
-          - j
-      audio:
-        type: files
-        label: MP3
-        multiple: false
-        width: 1/2
-      youtube:
-        type: url
-        label: YT
-        width: 1/2
-      text:
-        label: Text
-        type: markdown
+  - width: 2/3     
+    sections: 
+      fields:
+        type: fields
+        fields:
+          artist:
+            type: text
+            label: Artiste/groupe
+            width: 3/4
+          publisher:
+            type: select
+            width: 1/4
+            options:
+              - v
+              - jm
+              - j
+          audio:
+            type: files
+            label: MP3
+            multiple: false
+            width: 1/2
+          youtube:
+            type: url
+            label: YT
+            width: 1/2
+          text:
+            label: Text
+            type: markdown
+
+      reactions:
+        type: pages
       
   - width: 1/3
     sections:

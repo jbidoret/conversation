@@ -22,7 +22,10 @@
     endif
   ?>
 
-<link href="https://fonts.googleapis.com/css2?family=Trispace:wdth,wght@75..125,100..800&display=swap" rel="stylesheet"> 
+  <style>
+    ol { counter-reset: list <?= $conversation->count() + 1; ?>}
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Trispace:wdth,wght@75..125,100..800&display=swap" rel="stylesheet"> 
 
 
 </head>
